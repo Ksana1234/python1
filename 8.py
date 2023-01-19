@@ -3,7 +3,7 @@
 # В конце программы вывести на экран оба файла - старый в неизменном виде и новый в обратном порядке.
 
 
-with open('321.txt', 'w+') as f:
+with open('321.txt', 'w') as f:
     for line in reversed(list(open("123.txt"))):
         f.write(line)
 
