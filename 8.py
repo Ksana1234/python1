@@ -5,5 +5,12 @@
 
 with open('321.txt', 'w') as f:
     for line in reversed(list(open("123.txt"))):
-        f.write(line)
+        f.writelines(line)
+
+with open('123.txt', 'r') as f:
+    print(f.read())
+
+
+with open('321.txt', 'r') as f:
+    print(f.read())
 
